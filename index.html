@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light No Fire Español - Comunidad y Alianzas Hispanas</title>
+    <meta name="description" content="Únete al punto de encuentro definitivo de Light No Fire en español. Forja alianzas, descubre asentamientos y participa en la diplomacia del nuevo mundo de Hello Games.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* MODO OSCURO CÁLIDO */
+            --fondo-header: #050505; /* Casi negro absoluto */
+            --fondo-main: #100a05; /* Fondo oscuro con tono madera */
+            --primario: #e67e22; /* Naranja Fuego */
+            --primario-soft: #d35400;
+            --texto-puro: #fefefe; /* Texto principal casi blanco */
+            --texto-suave: #bbbbbb; /* Texto FAQ y menos importante */
+            --borde: #2a1a0a; /* Marrón oscuro para bordes */
+            --acento-carrd: #ff9f43; /* El naranja brillante de tu Carrd */
+        }
+
+        body {
+            background-color: var(--fondo-header);
+            color: var(--texto-suave);
+            font-family: 'Segoe Print', 'Bradley Hand', Chilanka, 'Comic Sans MS', cursive;
+            margin: 0;
+            line-height: 1.8;
+	    font-size: 19px;
+        }
+
+
+	h1 {
+	    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+	    font-style: italic;
+	    color: var(--primario);
+	    text-transform: uppercase; /* Mantengo las mayúsculas de tu diseño anterior */
+	    letter-spacing: 3px; 
+	    font-weight: 700; /* Negrita para que destaque como título principal */
+	}
+
+
+	h2, h3 {
+	    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, 'Comic Sans MS', cursive;
+	    color: var(--primario);
+	    text-transform: uppercase;
+	    letter-spacing: 2px;
+	    font-weight: 700;
+	}
+
+        strong {
+            color: var(--texto-puro);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Cabecera con Fondo Oscuro */
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 20px 0 20px; /* Reducido espacio inferior */
+            border-bottom: 1px solid var(--borde);
+            background: var(--fondo-header);
+        }
+
+        .header-titles {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        .logo-hoguera {
+            font-size: 35px;
+            filter: drop-shadow(0 0 8px var(--primario));
+        }
+
+        .header-subtitle {
+            font-style: italic;
+            color: #888;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        /* Contenido Principal */
+        main {
+            flex: 3;
+            padding: 30px;
+            min-width: 300px;
+            background-color: var(--fondo-main); /* Madera oscura */
+            border-radius: 8px 0 0 8px;
+            border: 1px solid var(--borde);
+            border-right: none;
+        }
+
+        /* Barra Lateral */
+        aside {
+            flex: 1;
+            padding: 20px;
+            min-width: 250px;
+            background: #080808; /* Más oscuro para contraste */
+            border-radius: 0 8px 8px 0;
+            height: fit-content;
+            margin-top: 0;
+            border: 1px solid var(--borde);
+            border-left: none;
+        }
+
+        /* Botón con el Naranja de Carrd */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--acento-carrd);
+            color: #000; /* Texto negro para contraste */
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px; /* Más moderno como en Carrd */
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .cta-button:hover {
+            box-shadow: 0 0 20px rgba(255, 159, 67, 0.5);
+            transform: translateY(-2px);
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #1a1005;
+            padding-bottom: 15px;
+        }
+
+        .faq-question {
+            color: var(--primario);
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: var(--texto-puro);
+        }
+
+        /* Sidebar Widgets */
+        .widget {
+            margin-bottom: 35px;
+        }
+
+        .social-link {
+            display: block;
+            color: var(--acento-carrd);
+            text-decoration: none;
+            padding: 12px 0;
+            border-bottom: 1px dashed #222;
+            transition: 0.2s;
+        }
+
+        .social-link:hover {
+            color: var(--texto-puro);
+            padding-left: 5px;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #444;
+            border-top: 1px solid var(--borde);
+            background-color: #050505;
+        }
+
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            main, aside { border-radius: 8px; border: 1px solid var(--borde); border-right: 1px solid var(--borde); border-left: 1px solid var(--borde); margin-bottom: 15px;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="D:\Juegos\Light No Fire\Recursos\Web\banner.webp" 
+         alt="Banner Light No Fire Hispano" 
+         style="max-width: 100%; height: auto; border-radius: 8px;">
+
+    <div class="header-titles">
+        <span class="logo-hoguera">🔥</span>
+        <h1>Light No Fire España y Latam</h1>
+        <span class="logo-hoguera">🔥</span>
+    </div>
+    <p class="header-subtitle">"No camines solo por un mundo infinito."</p>
+</header>
+
+<div class="container">
+    <main>
+        <h2>El Concilio de la Hoguera</h2>
+        <p>Bienvenido al punto de encuentro donde convergen las diferentes comunidades hispanas de <strong>Light No Fire</strong>. Aquí, la inmensidad del mapa no es un obstáculo, sino una oportunidad para forjar alianzas inquebrantables, fundar asentamientos legendarios y reclutar a la tripulación que gobernará los mares bajo tu estandarte.</p>
+        
+        <p><strong>Nuestra esencia no es la conquista, sino la unión.</strong></p>
+
+	<p>No pretendemos ser un clan más, ni una alianza bajo un solo mando. Queremos ser el refugio místico donde los líderes de todos los clanes se reúnen para la diplomacia, el comercio y el intercambio de conocimientos.</p>
+        
+        <p>Tanto si ya tienes una alianza como si eres un explorador solitario, te invitamos a formar parte de esta red social de apoyo y colaboración única. En este nuevo universo digital, donde la tierra es tan antigua como los secretos que esconde, tu historia comienza junto a nuestra hoguera.</p>
+
+        <a href="https://lightnofirehispano.carrd.co/" class="cta-button">Links</a>
+
+        <hr style="margin: 50px 0; border-color: var(--borde);">
+
+        <h3>Preguntas Frecuentes (FAQ)</h3>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Qué es el Concilio de la Hoguera?</div>
+            <div class="faq-answer">Es el espacio neutral de diplomacia y encuentro para todos los jugadores y clanes de habla hispana de Light No Fire.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo me registro en el Censo?</div>
+            <div class="faq-answer">Una vez entres en nuestro Discord, el Custodio de la Llama te guiará para registrar tu nombre y raza en los archivos.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Es oficial de Hello Games?</div>
+            <div class="faq-answer">No, es una iniciativa creada por y para la comunidad hispana.</div>
+        </div>
+    </main>
+
+    <aside>
+        <div class="widget">
+            <h3>Comunidad</h3>
+            <a href="https://discord.gg/kbtgT8bWKg" class="social-link" target="_blank">💬 Discord Oficial</a>
+            <a href="https://t.me/LightNoFireES" class="social-link" target="_blank">✈️ Telegram de Avisos</a>
+            <a href="mailto:lightnofirecomunidadhispana@gmail.com" class="social-link">📩 Contactar Custodio</a>
+        </div>
+
+        <div class="widget">
+            <h3>Estado del Mundo</h3>
+            <p style="font-size: 0.9rem; color: var(--texto-puro);">
+                <strong>Exploradores:</strong> 1 (¡Tú eres el primero!)<br>
+                <strong>Asentamientos:</strong> 0<br>
+                <strong>Versión:</strong> Pre-Lanzamiento
+            </p>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    &copy; 2026 El Custodio de la Llama - Comunidad Hispana de Light No Fire.
+</footer>
+
+</body>
+</html>
